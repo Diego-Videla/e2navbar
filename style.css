@@ -18,7 +18,7 @@ header{
     z-index: 2;
 }
 .logo{
-    height: 50%;
+    height: 100%;
 }
 .navbar,
 .navbar-list{
@@ -40,10 +40,15 @@ header{
 .navbar-list li:first-child >a{
     font-weight: 600;
 }
+.cart-icon{
+    height: 30px;
+    width: 30px;
+}
 
 /*portada*/
 main{
-    background-color: rgb(0, 102, 255);
+    /*background-color: rgb(0, 102, 255);*/
+    background-color: #03045e;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,27 +61,29 @@ main{
     padding: 10px 0;
     max-width: 1200px;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content:center;
+    align-items: center;
     
 }
 .hero-info{
     display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
     gap: 20px;
     width: 50%;
 }
 .hero-info h1{
-    font-size: 48px;
     width: 80%;
+    font-size: 48px;
     min-width: 300px;
     font-weight: 800;
-    color:chartreuse
+    color: #90e0ef;
 }
 .hero-info p{
+    width: 80%;
     font-size: 14px;
-    width: 70%;
-    color: black;
+    color:white;
     
 }
 .hero-info p>span{
@@ -93,8 +100,10 @@ main{
 
 }
 .hero-card{
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
 }
 .hero-card img{
     width: 70%;;
@@ -110,11 +119,104 @@ main{
 }
 
 .info-p{
-    font-size: 16px;
+    font-size: 22px;
     width: 80%;
-    color: black;
+    color: white;
     text-align: center;
     justify-content: center;
     padding-bottom: 20px;
     
+}
+#beneficios{
+    padding: 30px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+#beneficios h2{
+    font-size: 32px;
+    font-weight: 800;
+}
+.beneficios-cards-contenedores{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.info-cards{
+    width: 300px;
+    height: 290px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgrey;
+    border-radius: 10px;
+    gap: 20px;
+}
+.info-cards img{
+    width: 100px;
+}
+.info-cards h3{
+    font-weight: 600;
+    font-size: 18px;
+}
+.info-cards p{
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+}
+#contacto{
+    padding: 10px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 250px;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    gap:  30px;
+}
+.contacto-info{
+    display:  flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contacto-info a{
+    color:white;
+    font-size: 18px;   
+    font-weight: 500; 
+}
+.contacto-info img{
+    max-width: 20px;
+    height: 20px;
+}
+.contenedor h2{
+    font-size: 50px;
+}
+.foto-contacto{
+    width: 650px;
+}
+#footer{
+    background-color: #03045e;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer img{
+    width: 120px;
+    height: 100px;
+}
+#menu-toggle,
+#cart-toggle,
+.menu-label{
+    display: none;
 }
